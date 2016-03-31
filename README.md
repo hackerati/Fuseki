@@ -1,9 +1,6 @@
-# ![icon](CrushBootstrap/Resources/Images.xcassets/AppIcon.appiconset/Icon-60@2x.png) Amaro [![Build Status](https://img.shields.io/travis/crushlovely/Amaro.svg?style=flat)](https://travis-ci.org/crushlovely/Amaro)
+#Fuseki
 
-Crush & Lovely's iOS boilerplate.
-
-[Changelog](https://github.com/crushlovely/Amaro/wiki/Changelog)
-
+Based on Crush & Lovely's iOS boilerplate.
 
 ## Say what now?
 We want to hit the ground running. Xcode and the iOS ecosystem don't make that easy. Enter Amaro. After running one simple command, you get a ready-to-build universal iOS application, [full of delights](#whats-included).
@@ -13,7 +10,7 @@ We want to hit the ground running. Xcode and the iOS ecosystem don't make that e
 Change to your projects directory, run this line in your terminal, and follow the prompts:
 
 ```sh
-ruby -e "$(curl -fsSL https://raw.github.com/crushlovely/Amaro/master/tiramisu)"
+ruby -e "$(curl -fsSL https://raw.github.com/thehackerati/Fuseki/master/tiramisu)"
 ```
 
 Of course, if you're wary of running random scripts (legit!), please read [tiramisu](tiramisu). At a high level, the script creates a local git repository with Amaro as a remote named "bootstrap", tweaks filenames and contents as per your input, and grabs third-party code from Cocoapods.
