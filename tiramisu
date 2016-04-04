@@ -8,7 +8,7 @@ require 'uri'
 require 'json'
 require 'pathname'
 
-# If the environmental variable AMARO_EXPECT is set, color output is disabled,
+# If the environmental variable FUSEKI_EXPECT is set, color output is disabled,
 # and a standard getc is used instead of io/console's getch. This mode is
 # for running the script under expect(1), which is used for testing purposes,
 # and gets confused by all our l33t TTY hackery.
@@ -26,7 +26,7 @@ end
 
 class String
     def self.color_output?
-        STDOUT.isatty && !ENV['AMARO_EXPECT']
+        STDOUT.isatty && !ENV['FUSEKI_EXPECT']
     end
 
     { :red     => 1,
@@ -107,7 +107,7 @@ module AmaroUtils
         end
 
         begin
-            bg_thread.run if STDIN.isatty && !ENV['AMARO_EXPECT']
+            bg_thread.run if STDIN.isatty && !ENV['FUSEKI_EXPECT']
             yield
         rescue AmaroError => e
             puts "#{recall_cursor}💀#{clear_to_end_of_line}"
@@ -195,7 +195,7 @@ class InputReader
         line = ''
 
         loop do
-            c = (@source.isatty && !ENV['AMARO_EXPECT']) ? @source.getch : @source.getc
+            c = (@source.isatty && !ENV['FUSEKI_EXPECT']) ? @source.getch : @source.getc
 
             # newline or carriage return
             break if c == "\r" || c == "\n"
