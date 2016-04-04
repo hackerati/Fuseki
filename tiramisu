@@ -418,7 +418,7 @@ class Bootstrapper
     REPLACEMENT_ORGANIZATION = 'Crush & Lovely'
     REPLACEMENT_DOMAIN = 'com.crushlovely'
 
-    BOOTSTRAP_REPO = 'https://github.com/crushlovely/Amaro.git'
+    BOOTSTRAP_REPO = 'git@github.com:thehackerati/Fuseki.git'
     DEFAULT_BOOTSTRAP_BRANCH = 'master'
     BOOTSTRAP_WEBSITE = 'https://github.com/crushlovely/Amaro'
 
@@ -682,16 +682,16 @@ end
 # Away we go!
 
 print <<'EOS'.chomp.faint
-    ___           ___
-   /\  \         /\__\
-  /  \  \       / /  /
- / /\ \__\     / /__/
- \ \ \/__/  &  \ \  \
-  \ \__\        \ \__\
-   \/__/         \/__/
+ ___  ___  ________  ________  ___  __    _______   ________  ________  _________  ___     
+|\  \|\  \|\   __  \|\   ____\|\  \|\  \ |\  ___ \ |\   __  \|\   __  \|\___   ___\\  \    
+\ \  \\\  \ \  \|\  \ \  \___|\ \  \/  /|\ \   __/|\ \  \|\  \ \  \|\  \|___ \  \_\ \  \   
+ \ \   __  \ \   __  \ \  \    \ \   ___  \ \  \_|/_\ \   _  _\ \   __  \   \ \  \ \ \  \  
+  \ \  \ \  \ \  \ \  \ \  \____\ \  \\ \  \ \  \_|\ \ \  \\  \\ \  \ \  \   \ \  \ \ \  \ 
+   \ \__\ \__\ \__\ \__\ \_______\ \__\\ \__\ \_______\ \__\\ _\\ \__\ \__\   \ \__\ \ \__\
+    \|__|\|__|\|__|\|__|\|_______|\|__| \|__|\|_______|\|__|\|__|\|__|\|__|    \|__|  \|__|                                              
+                                                                                           
 EOS
-puts "  Amaro v1.0.0\n".blue.bold
-
+puts "\nFuseki v1.0.0\n".blue.bold
 
 bootstrapper = Bootstrapper.new
 bootstrapper.check_sanity
