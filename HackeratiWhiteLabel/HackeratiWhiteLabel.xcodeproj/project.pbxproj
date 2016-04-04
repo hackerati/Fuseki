@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EF1AAF21CB2F31700D2C54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1AAF11CB2F31700D2C54F /* AppDelegate.swift */; };
+		3EF1AAF41CB2F31700D2C54F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1AAF31CB2F31700D2C54F /* ViewController.swift */; };
+		3EF1AAF71CB2F31700D2C54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1AAF51CB2F31700D2C54F /* Main.storyboard */; };
+		3EF1AAF91CB2F31700D2C54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1AAF81CB2F31700D2C54F /* Assets.xcassets */; };
+		3EF1AAFC1CB2F31700D2C54F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1AAFA1CB2F31700D2C54F /* LaunchScreen.storyboard */; };
+		3EF1AB071CB2F31700D2C54F /* HackeratiWhiteLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1AB061CB2F31700D2C54F /* HackeratiWhiteLabelTests.swift */; };
+		3EF1AB121CB2F31700D2C54F /* HackeratiWhiteLabelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1AB111CB2F31700D2C54F /* HackeratiWhiteLabelUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EF1AB031CB2F31700D2C54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EF1AAE61CB2F31700D2C54F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EF1AAED1CB2F31700D2C54F;
+			remoteInfo = HackeratiWhiteLabel;
+		};
+		3EF1AB0E1CB2F31700D2C54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EF1AAE61CB2F31700D2C54F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EF1AAED1CB2F31700D2C54F;
+			remoteInfo = HackeratiWhiteLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3EF1AAEE1CB2F31700D2C54F /* HackeratiWhiteLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackeratiWhiteLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF1AAF11CB2F31700D2C54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EF1AAF31CB2F31700D2C54F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EF1AAF61CB2F31700D2C54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EF1AAF81CB2F31700D2C54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EF1AAFB1CB2F31700D2C54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EF1AAFD1CB2F31700D2C54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EF1AB021CB2F31700D2C54F /* HackeratiWhiteLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackeratiWhiteLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF1AB061CB2F31700D2C54F /* HackeratiWhiteLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackeratiWhiteLabelTests.swift; sourceTree = "<group>"; };
+		3EF1AB081CB2F31700D2C54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EF1AB0D1CB2F31700D2C54F /* HackeratiWhiteLabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackeratiWhiteLabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF1AB111CB2F31700D2C54F /* HackeratiWhiteLabelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackeratiWhiteLabelUITests.swift; sourceTree = "<group>"; };
+		3EF1AB131CB2F31700D2C54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EF1AAEB1CB2F31700D2C54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EF1AAFF1CB2F31700D2C54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EF1AB0A1CB2F31700D2C54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EF1AAE51CB2F31700D2C54F = {
+			isa = PBXGroup;
+			children = (
+				3EF1AAF01CB2F31700D2C54F /* HackeratiWhiteLabel */,
+				3EF1AB051CB2F31700D2C54F /* HackeratiWhiteLabelTests */,
+				3EF1AB101CB2F31700D2C54F /* HackeratiWhiteLabelUITests */,
+				3EF1AAEF1CB2F31700D2C54F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3EF1AAEF1CB2F31700D2C54F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EF1AAEE1CB2F31700D2C54F /* HackeratiWhiteLabel.app */,
+				3EF1AB021CB2F31700D2C54F /* HackeratiWhiteLabelTests.xctest */,
+				3EF1AB0D1CB2F31700D2C54F /* HackeratiWhiteLabelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EF1AAF01CB2F31700D2C54F /* HackeratiWhiteLabel */ = {
+			isa = PBXGroup;
+			children = (
+				3EF1AAF11CB2F31700D2C54F /* AppDelegate.swift */,
+				3EF1AAF31CB2F31700D2C54F /* ViewController.swift */,
+				3EF1AAF51CB2F31700D2C54F /* Main.storyboard */,
+				3EF1AAF81CB2F31700D2C54F /* Assets.xcassets */,
+				3EF1AAFA1CB2F31700D2C54F /* LaunchScreen.storyboard */,
+				3EF1AAFD1CB2F31700D2C54F /* Info.plist */,
+			);
+			path = HackeratiWhiteLabel;
+			sourceTree = "<group>";
+		};
+		3EF1AB051CB2F31700D2C54F /* HackeratiWhiteLabelTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EF1AB061CB2F31700D2C54F /* HackeratiWhiteLabelTests.swift */,
+				3EF1AB081CB2F31700D2C54F /* Info.plist */,
+			);
+			path = HackeratiWhiteLabelTests;
+			sourceTree = "<group>";
+		};
+		3EF1AB101CB2F31700D2C54F /* HackeratiWhiteLabelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3EF1AB111CB2F31700D2C54F /* HackeratiWhiteLabelUITests.swift */,
+				3EF1AB131CB2F31700D2C54F /* Info.plist */,
+			);
+			path = HackeratiWhiteLabelUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EF1AAED1CB2F31700D2C54F /* HackeratiWhiteLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EF1AB161CB2F31700D2C54F /* Build configuration list for PBXNativeTarget "HackeratiWhiteLabel" */;
+			buildPhases = (
+				3EF1AAEA1CB2F31700D2C54F /* Sources */,
+				3EF1AAEB1CB2F31700D2C54F /* Frameworks */,
+				3EF1AAEC1CB2F31700D2C54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackeratiWhiteLabel;
+			productName = HackeratiWhiteLabel;
+			productReference = 3EF1AAEE1CB2F31700D2C54F /* HackeratiWhiteLabel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3EF1AB011CB2F31700D2C54F /* HackeratiWhiteLabelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EF1AB191CB2F31700D2C54F /* Build configuration list for PBXNativeTarget "HackeratiWhiteLabelTests" */;
+			buildPhases = (
+				3EF1AAFE1CB2F31700D2C54F /* Sources */,
+				3EF1AAFF1CB2F31700D2C54F /* Frameworks */,
+				3EF1AB001CB2F31700D2C54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EF1AB041CB2F31700D2C54F /* PBXTargetDependency */,
+			);
+			name = HackeratiWhiteLabelTests;
+			productName = HackeratiWhiteLabelTests;
+			productReference = 3EF1AB021CB2F31700D2C54F /* HackeratiWhiteLabelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3EF1AB0C1CB2F31700D2C54F /* HackeratiWhiteLabelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EF1AB1C1CB2F31700D2C54F /* Build configuration list for PBXNativeTarget "HackeratiWhiteLabelUITests" */;
+			buildPhases = (
+				3EF1AB091CB2F31700D2C54F /* Sources */,
+				3EF1AB0A1CB2F31700D2C54F /* Frameworks */,
+				3EF1AB0B1CB2F31700D2C54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EF1AB0F1CB2F31700D2C54F /* PBXTargetDependency */,
+			);
+			name = HackeratiWhiteLabelUITests;
+			productName = HackeratiWhiteLabelUITests;
+			productReference = 3EF1AB0D1CB2F31700D2C54F /* HackeratiWhiteLabelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EF1AAE61CB2F31700D2C54F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Hackerati;
+				TargetAttributes = {
+					3EF1AAED1CB2F31700D2C54F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					3EF1AB011CB2F31700D2C54F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3EF1AAED1CB2F31700D2C54F;
+					};
+					3EF1AB0C1CB2F31700D2C54F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3EF1AAED1CB2F31700D2C54F;
+					};
+				};
+			};
+			buildConfigurationList = 3EF1AAE91CB2F31700D2C54F /* Build configuration list for PBXProject "HackeratiWhiteLabel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EF1AAE51CB2F31700D2C54F;
+			productRefGroup = 3EF1AAEF1CB2F31700D2C54F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EF1AAED1CB2F31700D2C54F /* HackeratiWhiteLabel */,
+				3EF1AB011CB2F31700D2C54F /* HackeratiWhiteLabelTests */,
+				3EF1AB0C1CB2F31700D2C54F /* HackeratiWhiteLabelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EF1AAEC1CB2F31700D2C54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EF1AAFC1CB2F31700D2C54F /* LaunchScreen.storyboard in Resources */,
+				3EF1AAF91CB2F31700D2C54F /* Assets.xcassets in Resources */,
+				3EF1AAF71CB2F31700D2C54F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EF1AB001CB2F31700D2C54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EF1AB0B1CB2F31700D2C54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EF1AAEA1CB2F31700D2C54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EF1AAF41CB2F31700D2C54F /* ViewController.swift in Sources */,
+				3EF1AAF21CB2F31700D2C54F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EF1AAFE1CB2F31700D2C54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EF1AB071CB2F31700D2C54F /* HackeratiWhiteLabelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EF1AB091CB2F31700D2C54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EF1AB121CB2F31700D2C54F /* HackeratiWhiteLabelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EF1AB041CB2F31700D2C54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EF1AAED1CB2F31700D2C54F /* HackeratiWhiteLabel */;
+			targetProxy = 3EF1AB031CB2F31700D2C54F /* PBXContainerItemProxy */;
+		};
+		3EF1AB0F1CB2F31700D2C54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EF1AAED1CB2F31700D2C54F /* HackeratiWhiteLabel */;
+			targetProxy = 3EF1AB0E1CB2F31700D2C54F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EF1AAF51CB2F31700D2C54F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EF1AAF61CB2F31700D2C54F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3EF1AAFA1CB2F31700D2C54F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EF1AAFB1CB2F31700D2C54F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EF1AB141CB2F31700D2C54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3EF1AB151CB2F31700D2C54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EF1AB171CB2F31700D2C54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HackeratiWhiteLabel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thehackerati.HackeratiWhiteLabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3EF1AB181CB2F31700D2C54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HackeratiWhiteLabel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thehackerati.HackeratiWhiteLabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3EF1AB1A1CB2F31700D2C54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HackeratiWhiteLabelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thehackerati.HackeratiWhiteLabelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackeratiWhiteLabel.app/HackeratiWhiteLabel";
+			};
+			name = Debug;
+		};
+		3EF1AB1B1CB2F31700D2C54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HackeratiWhiteLabelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thehackerati.HackeratiWhiteLabelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackeratiWhiteLabel.app/HackeratiWhiteLabel";
+			};
+			name = Release;
+		};
+		3EF1AB1D1CB2F31700D2C54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HackeratiWhiteLabelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thehackerati.HackeratiWhiteLabelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HackeratiWhiteLabel;
+			};
+			name = Debug;
+		};
+		3EF1AB1E1CB2F31700D2C54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HackeratiWhiteLabelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thehackerati.HackeratiWhiteLabelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HackeratiWhiteLabel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EF1AAE91CB2F31700D2C54F /* Build configuration list for PBXProject "HackeratiWhiteLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EF1AB141CB2F31700D2C54F /* Debug */,
+				3EF1AB151CB2F31700D2C54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EF1AB161CB2F31700D2C54F /* Build configuration list for PBXNativeTarget "HackeratiWhiteLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EF1AB171CB2F31700D2C54F /* Debug */,
+				3EF1AB181CB2F31700D2C54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3EF1AB191CB2F31700D2C54F /* Build configuration list for PBXNativeTarget "HackeratiWhiteLabelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EF1AB1A1CB2F31700D2C54F /* Debug */,
+				3EF1AB1B1CB2F31700D2C54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3EF1AB1C1CB2F31700D2C54F /* Build configuration list for PBXNativeTarget "HackeratiWhiteLabelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EF1AB1D1CB2F31700D2C54F /* Debug */,
+				3EF1AB1E1CB2F31700D2C54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EF1AAE61CB2F31700D2C54F /* Project object */;
+}

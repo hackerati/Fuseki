@@ -414,13 +414,13 @@ end
 
 class Bootstrapper
     REPLACEMENT_PREFIX = 'CRBS'
-    REPLACEMENT_PROJECT_NAME = 'CrushBootstrap'
-    REPLACEMENT_ORGANIZATION = 'Crush & Lovely'
-    REPLACEMENT_DOMAIN = 'com.crushlovely'
+    REPLACEMENT_PROJECT_NAME = 'HackeratiWhiteLabel'
+    REPLACEMENT_ORGANIZATION = 'Hackerati'
+    REPLACEMENT_DOMAIN = 'com.thehackerati'
 
     BOOTSTRAP_REPO = 'git@github.com:thehackerati/Fuseki.git'
     DEFAULT_BOOTSTRAP_BRANCH = 'master'
-    BOOTSTRAP_WEBSITE = 'https://github.com/crushlovely/Amaro'
+    BOOTSTRAP_WEBSITE = 'git@github.com:thehackerati/Fuseki'
 
     attr_accessor :options
 
@@ -429,7 +429,7 @@ class Bootstrapper
         init_git
         rename_files
         update_contents
-        update_xcconfigs
+        #update_xcconfigs
         install_pods
         remove_bootstrap_detritus
     end
@@ -536,11 +536,6 @@ class Bootstrapper
             files_with_proj_name = FileList["**/*#{REPLACEMENT_PROJECT_NAME}*"]
             rename_filelist(files_with_proj_name, REPLACEMENT_PROJECT_NAME, options[:project_name])
         end
-
-        task 'Renaming prefixed files' do
-            files_with_prefix = FileList["**/#{REPLACEMENT_PREFIX}*"]
-            rename_filelist(files_with_prefix, /^#{Regexp.quote(REPLACEMENT_PREFIX)}/, options[:class_prefix])
-        end
     end
 
     def update_contents
@@ -552,16 +547,6 @@ class Bootstrapper
             # Replace default bundle domain and organization
             replace_in_files(filelist, REPLACEMENT_ORGANIZATION, options[:org_name]) unless options[:org_name] == REPLACEMENT_ORGANIZATION
             replace_in_files(filelist, REPLACEMENT_DOMAIN, options[:bundle_domain]) unless options[:bundle_domain] == REPLACEMENT_DOMAIN
-
-            # Replace the class prefix in all files.
-            replace_in_files(filelist, REPLACEMENT_PREFIX, options[:class_prefix])
-
-            # If the new class prefix is empty, we need to delete the whole CLASSPREFIX = ... line in the project file.
-            # In this case, the replacement above leaves this line reading "CLASSPREFIX = ;", which is invalid syntax.
-            if options[:class_prefix].empty?
-                project_file = FileList['**/project.pbxproj']
-                replace_in_files(project_file, /^\s*CLASSPREFIX\s*=.*$/, '')
-            end
 
             # The 'Created by' line in the headers of code files
             filelist = FileList['**/*.{h,m}']
@@ -594,7 +579,7 @@ class Bootstrapper
     end
 
     def install_pods
-        edit 'Podfile' if YesNoPrompt.run!('Would you like to edit your Podfile?', :default => false)
+        #edit 'Podfile' if YesNoPrompt.run!('Would you like to edit your Podfile?', :default => false)
 
         if anything_to_commit?
             task 'Committing' do
@@ -634,28 +619,6 @@ project_name = Prompt.new('New project name', :key => :project_name) do |p|
         input
     end
 end
-
-
-class_prefix = Prompt.new('Class prefix (optional; 2 or preferably 3 characters)', :key => :class_prefix) do |p|
-    p.default = ''
-    p.show_default = false
-    p.length_limit = 3
-    p.validation_proc = lambda do |input|
-        return '' if input.empty?
-
-        raise 'Prefix is too short.' if input.length == 1
-
-        input.upcase!
-
-        bad_prefixes = %w(AB AC AD AF AL AU AV CA CB CF CG CI CL CM CV CT EA EK GC JS MA MC MF MK NK NS PK QL SC SK SL SS TW UI UT SCN WK)
-        raise 'That prefix is already in use by a well-known library.' if bad_prefixes.include? input
-
-        raise 'Class prefixes must be valid identifiers.' unless input =~ /^[A-Z][A-Z0-9]+$/
-
-        input
-    end
-end
-
 
 full_name = Prompt.new('Your name', :key => :full_name) do |p|
     last_line = `dscl . read "/Users/$USER" RealName 2>/dev/null`.lines.last || ''
@@ -698,15 +661,13 @@ bootstrapper.check_sanity
 
 bootstrapper.puts_source_description
 
-bootstrapper.options = Prompt.run_sequence(project_name, class_prefix, full_name, org_name, bundle_domain)
+bootstrapper.options = Prompt.run_sequence(project_name, full_name, org_name, bundle_domain)
 
 puts <<-EOS.gray
-
 🎉  #{'It\'s time to build your project!'.green}
-Pausing for 3 seconds in case you change your mind. Press any key to abort.
 EOS
 
-exit if STDIN.getch(:min => 0, :time => 3)
+#exit if STDIN.getch(:min => 0, :time => 3)
 
 bootstrapper.run!
 
@@ -714,10 +675,6 @@ puts <<-EOS.gray
 
 👌️  #{'You\'re all set!'.green}
 
-Don't forget to open the .xcworkspace, not the .xcodeproj,
-and add some prose to README.md!
-
-XOXO -C&L 💋
 EOS
 
 open_prompt = YesNoPrompt.run!('Would you like to open your project?', :default => true)
