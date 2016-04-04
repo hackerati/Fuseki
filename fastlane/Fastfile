@@ -22,6 +22,7 @@ default_platform :ios
 
 platform :ios do
   before_all do
+    ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
     cocoapods
   end
 
