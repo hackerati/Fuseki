@@ -6,17 +6,17 @@ platform :ios, '8.0'
 
 
 # Crush Utility Belt
-pod 'Sidecar', '~> 1.0'
+#pod 'Sidecar', '~> 1.0'
 
 # Logging & Analytics
-pod 'CocoaLumberjack', '~> 2.0'
+#pod 'CocoaLumberjack', '~> 2.0'
 
 # Networking
-pod 'AFNetworking'
+#pod 'AFNetworking'
 
 # Various goodies
-pod 'libextobjc'       # Useful macros and some craziness
-pod 'Asterism'         # Nice & fast collection operations
+#pod 'libextobjc'       # Useful macros and some craziness
+#pod 'Asterism'         # Nice & fast collection operations
 
 # You may want...
 #pod 'FormatterKit'    # For all your string formatting needs
@@ -28,10 +28,10 @@ pod 'Asterism'         # Nice & fast collection operations
 #pod 'Reveal-iOS-SDK', :configurations => ['Debug_Staging', 'Debug_Production']
 
 # Testing necessities
-target 'Specs' do
-  pod 'Specta'
-  pod 'Expecta'
-end
+#target 'Specs' do
+#  pod 'Specta'
+#  pod 'Expecta'
+#end
 
 
 # Inform CocoaPods that we use some custom build configurations
