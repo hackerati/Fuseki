@@ -551,13 +551,6 @@ class Bootstrapper
             filelist = FileList['**/*.{h,m}']
             today = Time.now.strftime('%-m/%-d/%y')
             replace_in_files(filelist, /Created by .+ on [0-9].*/, "Created by %{full_name} on #{today}" % options)
-
-            # Remove ignores and build commands that are only relevant in the bootstrap repo itself
-            # These are demarcated with ">>>bootstrap-only ... <<<bootstrap-only". The lines containing the
-            # delimiters will themselves be deleted.
-            # It's important that we do this now so the gitignore is correct for future commits.
-            filelist = FileList['.gitignore', '.travis.yml']
-            replace_in_files(filelist, /^.+>>>bootstrap-only(?:.|\n)*<<<bootstrap-only.*/, '')
         end
 
         task 'Committing' do
@@ -595,8 +588,7 @@ class Bootstrapper
     def remove_bootstrap_detritus
         task 'Cleaning up after ourselves' do
             sh('git rm -q tiramisu')
-            sh('git rm -rq bootstrap-scripts')
-            commit 'Remove init and bootstrap-specific scripts'
+            commit 'Remove init  scripts'
 
             # Squash all of our commits together into one, for prettiness
             # See: http://stackoverflow.com/questions/1657017/git-squash-all-commits-into-a-single-commit
