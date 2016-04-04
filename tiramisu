@@ -413,7 +413,6 @@ end
 
 
 class Bootstrapper
-    REPLACEMENT_PREFIX = 'CRBS'
     REPLACEMENT_PROJECT_NAME = 'HackeratiWhiteLabel'
     REPLACEMENT_ORGANIZATION = 'Hackerati'
     REPLACEMENT_DOMAIN = 'com.thehackerati'
@@ -568,7 +567,7 @@ class Bootstrapper
 
     def update_xcconfigs
         task 'Pulling latest xcconfigs' do
-            sh("'%{project_name}/Other-Sources/Configuration/jspahrsummers-xcconfigs/UpdateXCConfigs.sh' -q" % options)
+            #sh("'%{project_name}/Other-Sources/Configuration/jspahrsummers-xcconfigs/UpdateXCConfigs.sh' -q" % options)
         end
 
         if anything_to_commit?
