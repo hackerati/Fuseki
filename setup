@@ -490,7 +490,7 @@ class Bootstrapper
             sh('git init -q')
 
             # It's a shame we have to do this, really, but you can't do a squashed merge into an empty repo
-            IO.write('README.md', "# %{project_name}\n\n*An iOS project begun with [Amaro](#{BOOTSTRAP_WEBSITE})*\n" % options)
+            IO.write('README.md', "# %{project_name}" % options)
             commit 'Initial commit'
         end
 

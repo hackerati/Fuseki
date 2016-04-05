@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					3EF1AAED1CB2F31700D2C54F = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 63LVAGD552;
 					};
 					3EF1AB011CB2F31700D2C54F = {
 						CreatedOnToolsVersion = 7.3;
@@ -399,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HackeratiWhiteLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thehackerati.HackeratiWhiteLabel;
@@ -410,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HackeratiWhiteLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thehackerati.HackeratiWhiteLabel;
@@ -482,6 +485,7 @@
 				3EF1AB181CB2F31700D2C54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EF1AB191CB2F31700D2C54F /* Build configuration list for PBXNativeTarget "HackeratiWhiteLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +494,7 @@
 				3EF1AB1B1CB2F31700D2C54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EF1AB1C1CB2F31700D2C54F /* Build configuration list for PBXNativeTarget "HackeratiWhiteLabelUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +503,7 @@
 				3EF1AB1E1CB2F31700D2C54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
