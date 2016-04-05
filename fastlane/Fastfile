@@ -35,8 +35,8 @@ platform :ios do
 
     #badge(dark: true)
     match(type: "appstore", force: true)
-    scan(scheme: "Mariana-Tek")
-    gym(scheme: "Mariana-Tek")
+    scan(scheme: "HackeratiWhiteLabel")
+    gym(scheme: "HackeratiWhiteLabel")
 
     
     hockey(
