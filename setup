@@ -587,7 +587,7 @@ class Bootstrapper
 
     def remove_bootstrap_detritus
         task 'Cleaning up after ourselves' do
-            sh('git rm -q tiramisu')
+            sh('git rm -q setup')
             commit 'Remove init  scripts'
 
             # Squash all of our commits together into one, for prettiness

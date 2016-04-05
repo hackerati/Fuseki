@@ -4,14 +4,16 @@ Based heavily on Crush & Lovely's iOS boilerplate project Amaro, but tailored fo
 
 ## Gimme gimme
 
-Change to your projects directory, download the setup file and run:
+Change to your projects directory and run:
 
-$ ruby setup
+ruby -e "$(curl -fsSL https://raw.github.com/thehackerati/Fuseki/master/setup)"
 
-TODO DOC:
+TODO DOC
 
 Open project and changed scheme to shared.
+
 Setup hockeyapp
+
 Setup slack intergration
 
 ### Foundation
