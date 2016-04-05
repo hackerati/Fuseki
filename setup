@@ -14,7 +14,7 @@ require 'pathname'
 # and gets confused by all our l33t TTY hackery.
 
 # If an argument is passed to the script, it is expected to be a path
-# to a local clone of the Amaro repository. In this case, instead of cloning the
+# to a local clone of the Fuseki repository. In this case, instead of cloning the
 # github repo, the local clone is copied into place and cleaned up.
 # This is intended to test modifications to the repo without needing to push
 # to the remote.

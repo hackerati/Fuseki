@@ -2,7 +2,7 @@
 
 Based heavily on Crush & Lovely's iOS boilerplate project Amaro, but tailored for our workflow.
 
-## Gimme gimme
+## Usage
 
 Change to your projects directory and run:
 
@@ -10,11 +10,17 @@ ruby -e "$(curl -fsSL https://raw.github.com/thehackerati/Fuseki/master/setup)"
 
 TODO DOC
 
-Open project and changed scheme to shared.
-
 Setup hockeyapp
 
 Setup slack intergration
+
+
+## Development
+
+To run locally, clone and then use:
+
+ruby -e "$(curl -fsSL https://raw.github.com/thehackerati/Fuseki/master/setup)" ~/Fuseki
+
 
 ### Foundation
 * A local git repository for the application is created (and committed to a few times through the initialization process).
