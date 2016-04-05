@@ -1,12 +1,18 @@
 #Fuseki
 
-Based on Crush & Lovely's iOS boilerplate.
+Based heavily on Crush & Lovely's iOS boilerplate project Amaro, but tailored for our workflow.
 
 ## Gimme gimme
 
-Change to your projects directory, download the tiramisu file and run:
+Change to your projects directory, download the setup file and run:
 
-$ ruby tiramisu
+$ ruby setup
+
+TODO DOC:
+
+Open project and changed scheme to shared.
+Setup hockeyapp
+Setup slack intergration
 
 ### Foundation
 * A local git repository for the application is created (and committed to a few times through the initialization process).
